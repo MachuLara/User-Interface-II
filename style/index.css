@@ -137,3 +137,15 @@ nav{
 .interest-four{
   background-image: url('../images/frankie-x6vyL4YKP9c-unsplash.jpeg');
 }
+
+@media(max-width: 800px){
+  #top{
+    max-height: 42vh;
+  }
+}
+
+@media(max-width: 500px){
+  .header{
+    max-height: 10vh;
+  }
+}
