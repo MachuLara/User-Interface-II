@@ -13,7 +13,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -27,11 +26,11 @@ footer, header, hgroup, menu, nav, section {
   padding: 0%;
   margin: 0%;
   max-width: 100%;
-  border: 2px solid rgb(27, 211, 3);
+  border: 2px solid rgb(143, 247, 143);
 }
+/*General Styles*/
 html{
   font-size: 62.5%;
-
 }
 body{
   max-width: 100%;
@@ -70,14 +69,16 @@ button{
   margin-top: 4%;
   margin-left: 60%;
 }
-section, footer{
+footer{
   padding: 4% 0;
 }
+/*Helper Classes*/
 .bg-img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+/*Header Section Styles*/
 nav{
   display: flex;
   justify-content: space-between;
@@ -94,24 +95,45 @@ nav{
   justify-content: space-evenly;
   align-items: center;
 }
-.main-left{
-  padding-left: 8%;
-  width: 50%;
-  height: 32vh;
-}
-.interests-container1{
+/*Top Section Styles*/
+#top{
+  height: 85vh;
   display: flex;
-  flex-direction: column;
-  background-color:rgba(255, 255, 255, 0.856);
+  flex-wrap: wrap;
 }
-.interests-container1 .interests-container2{
-  margin: 3vh;
-  display: flex;
-  justify-content: space-around;
+#top, .top-section, .bg-img{
+  background-image: url('../images/ricardo-gomez-angel-5YM26lUicfU-unsplash.jpeg');
+  background-position: bottom;
+  max-height: 25%;
+  max-width: 50%;
+  margin: 2%;
 }
-.interests-container1 div, .interests-container2 div{
+#top, .top-text{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+}
+/*My Interest Section Styles*/
+#my-interest{
+  padding-bottom: 0%;
+}
+.interests-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.interest-one, .interest-two, .interest-three, .interest-four, .interest-five, .interest-six{
+  width: 50%;
+}
+.interest-one{
+  background-image: url('../images/pedro-barros-d03GRN5LKm0-unsplash.jpeg');
+}
+.interest-two{
+  background-image: url('../images/jessica-lam-_hF5Av0-nCs-unsplash.jpeg');
+}
+.interest-three{
+  background-image: url('../images/elodie-oudot-TaEd6ndkRWM-unsplash.jpeg');
+}
+.interest-four{
+  background-image: url('../images/frankie-x6vyL4YKP9c-unsplash.jpeg');
 }
